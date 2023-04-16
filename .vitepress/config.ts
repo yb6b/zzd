@@ -6,6 +6,9 @@ export default defineConfig({
   lang: 'zh-cn',
   title: "哲豆音形",
   description: "简单、顺手、成熟的两笔输入法。",
+  head:[
+    ['link', {rel: 'icon',type:'image/svg+xml',href:'/zzd-logo.svg'}],
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: "/zzd-logo.svg",
