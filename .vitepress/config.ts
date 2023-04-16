@@ -10,7 +10,7 @@ export default defineConfig({
     ['link', {
       rel: 'icon',
       type: 'image/svg+xml',
-      href: '/zzd-logo.svg',
+      href: '/zzd/zzd-logo.svg',
     }],
   ],
   themeConfig: {
