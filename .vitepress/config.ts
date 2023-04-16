@@ -6,8 +6,12 @@ export default defineConfig({
   lang: 'zh-cn',
   title: "哲豆音形",
   description: "简单、顺手、成熟的两笔输入法。",
-  head:[
-    ['link', {rel: 'icon',type:'image/svg+xml',href:'/zzd-logo.svg'}],
+  head: [
+    ['link', {
+      rel: 'icon',
+      type: 'image/svg+xml',
+      href: '/zzd-logo.svg',
+    }],
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -62,14 +66,14 @@ export default defineConfig({
             displayDetails: '详细展示',
             resetButtonTitle: '清空',
             noResultsText: '搜索不到，换个关键词',
-            backButtonTitle:'返回',
-            footer:{
-              selectText:'选择',
-              navigateText:'浏览',
-              navigateDownKeyAriaLabel:'下键',
-              navigateUpKeyAriaLabel:'上键',
-              closeKeyAriaLabel:'关闭',
-              closeText:'取消搜索',
+            backButtonTitle: '返回',
+            footer: {
+              selectText: '选择',
+              navigateText: '浏览',
+              navigateDownKeyAriaLabel: '下键',
+              navigateUpKeyAriaLabel: '上键',
+              closeKeyAriaLabel: '关闭',
+              closeText: '取消搜索',
             }
           },
         }
