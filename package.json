@@ -2,7 +2,7 @@
   "name": "zzd",
   "version": "1.0.0",
   "description": "哲豆音形的介绍网站",
-  "private":true,
+  "private": true,
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",

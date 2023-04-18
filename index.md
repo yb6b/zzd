@@ -2,6 +2,9 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
+title: 首页
+description: 哲豆音型两笔输入法介绍。
+
 hero:
   name: 哲豆音形
   text: 两笔输入法
