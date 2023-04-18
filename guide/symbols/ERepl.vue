@@ -1,38 +1,43 @@
 <script setup>
-import { withBase } from "vitepress";
-const p = defineProps({ data: Object, prefix: String });
-
-const keys = "qwertyuiopasdfghjkl;zxcvbnm,./";
-
-function fixHref(end, key) {
-  if (end) return `#${end}`;
-  else return `#${p.prefix}${key}`;
-}
+import { DataE } from "./SymbolsDataUnderE";
+import { ref } from "vue";
+const codes = ref("e");
 
 function calcOpacity(key) {
   if (";,./".includes(key)) return 0.7;
- // if (p?.data?.[key]) return;
   return 1;
 }
 </script>
 
 <template>
+    <input v-model="codes" placeholder="what???" />
+    <h2>
+        <code>{{ codes }}</code>
+        {{ DataE?.[codes][0] }}
+    </h2>
   <div class="symbol-kbd">
-    <div v-for="key of keys" :style="{ opacity: calcOpacity(key) }">
+    <div
+      v-for="key of 'qwertyuiopasdfghjkl;zxcvbnm,./'"
+      :style="{ opacity: calcOpacity(key) }"
+    >
       <div class="symbol-keyname" v-text="key"></div>
-      <div v-text="p?.data?.[key]?.[0]"></div>
-      <template v-if="p?.data?.[key]?.[1]">
-        <div v-for="link of p?.data?.[key]?.[1]">
-          <a :href="fixHref(link?.[1], key)" target="_self">
-            {{ link?.[0] }}
-          </a>
-        </div>
+      <div v-text="DataE?.[codes][1]?.[key]?.join(' ')"></div>
+      <template v-if="DataE?.[codes + key]">
+        <a :href="'#'+codes+key" target="_self">
+          {{ DataE[codes+key][0] }}
+        </a>
       </template>
     </div>
   </div>
 </template>
 
 <style>
+input{
+    border: #a27800 solid;
+    border-radius: .5rem;
+    padding: .3rem;
+    font-family: monospace;
+}
 .symbol-kbd {
   text-align: center;
   font-size: smaller;
