@@ -25,5 +25,5 @@ for i in result.copy():
         result[prefix] = ['',{}]
 
 
-json.dump(result, open('result.json', 'w', -1, 'U8'),
+json.dump(result, open('___result.json', 'w', -1, 'U8'),
           ensure_ascii=False, sort_keys=True, indent=2)
