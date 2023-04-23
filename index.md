@@ -19,6 +19,9 @@ hero:
     - theme: alt
       text: 加入我们
       link: /join/
+    - theme: alt
+      text: 更新历史
+      link: /changelog/
 
 features:
   - title: 简单易学

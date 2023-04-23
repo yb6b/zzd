@@ -1,4 +1,7 @@
 import { defineConfig } from "vitepress";
+import data from '../changelog/readLog.js';
+
+
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -16,7 +19,13 @@ export default defineConfig({
       },
     ],
   ],
-  
+  markdown: {
+    theme: {
+      light: "light-plus",
+      dark: "material-theme-palenight"
+    }, 
+  },
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: "/zzd-logo.svg",
@@ -71,8 +80,15 @@ export default defineConfig({
       ],
       "/changelog": [
         {
-          /* TODO */
-        },
+          items: data.map(v => ({
+            text: v[0],
+            collapsed: true,
+            items: v[1].map(v2 => ({
+              text: `${v2.year}-${v2.month}-${v2.day}`,
+              link: `/changelog/${v2.year}-${v2.month}-${v2.day}`
+            }))
+          }))
+        }
       ],
     },
 
