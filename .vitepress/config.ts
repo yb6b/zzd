@@ -1,7 +1,16 @@
 import { defineConfig } from "vitepress";
 import data from '../changelog/readLog.js';
 
+const changelogConfig: any[] = data.map(v => ({
+  text: v[0],
+  collapsed: true,
+  items: v[1].map(v2 => ({
+    text: `${v2.year}-${v2.month}-${v2.day}`,
+    link: `/changelog/${v2.year}-${v2.month}-${v2.day}`
+  }))
+}))
 
+changelogConfig.unshift({ text: '更新历史', link: '/changelog/' })
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -23,7 +32,7 @@ export default defineConfig({
     theme: {
       light: "light-plus",
       dark: "material-theme-palenight"
-    }, 
+    },
   },
 
   themeConfig: {
@@ -80,14 +89,7 @@ export default defineConfig({
       ],
       "/changelog": [
         {
-          items: data.map(v => ({
-            text: v[0],
-            collapsed: true,
-            items: v[1].map(v2 => ({
-              text: `${v2.year}-${v2.month}-${v2.day}`,
-              link: `/changelog/${v2.year}-${v2.month}-${v2.day}`
-            }))
-          }))
+          items: changelogConfig
         }
       ],
     },
