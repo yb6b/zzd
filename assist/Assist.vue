@@ -3,7 +3,7 @@ import { ref } from "vue";
 import { fetchMb, Db } from "./fetchMb";
 
 const prompts = ref("");
-let mb: Db ;
+let mb: Db;
 
 async function getMb() {
   mb = await fetchMb();
@@ -13,9 +13,21 @@ getMb();
 
 <template>
   <input v-model="prompts" placeholder="输入要查询的字词" />
-  <ul v-if="mb?.has(prompts)">
-    <li v-for="i of mb.get(prompts)" v-text="i"></li>
-  </ul>
+
+  <table v-if="mb?.has(prompts)">
+    <tr>
+      <th>编码</th>
+      <th>选重</th>
+    </tr>
+    <tr v-for="i of mb.get(prompts)">
+      <td>
+        <code>{{ i.code }}</code>
+      </td>
+      <td>
+        {{ i.duplicated }}
+      </td>
+    </tr>
+  </table>
 </template>
 <style>
 input {
