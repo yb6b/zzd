@@ -1,4 +1,6 @@
-
+---
+title: 更新内容
+---
 <script setup>
     import {useData} from 'vitepress'
     import {onMounted} from 'vue'
@@ -10,6 +12,6 @@
 
 # {{$params.year}}年{{Number($params.month)}}月{{Number($params.day)}}日 更新内容
 
-```
+<pre>
 <!-- @content -->
-```
+</pre>

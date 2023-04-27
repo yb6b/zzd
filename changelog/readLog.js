@@ -32,7 +32,7 @@ for (let line of logData.split('\n')) {
 export default r
 
 function handleEachline(line) {
-    return line
+    return line.replaceAll('<','&lt;')
 }
 
 function formatNumber(n) {
