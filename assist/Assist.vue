@@ -25,58 +25,62 @@ const relavantWords = computed(() => {
 
 <template>
   <input v-model="prompts" placeholder="输入要查询的字词" />
+  <template v-if="mb">
+    <div v-if="mb.has(prompts)">
+      <table>
+        <tr>
+          <th>编码</th>
+          <th>选重</th>
+        </tr>
+        <tr v-for="i of mb.get(prompts)">
+          <td>
+            <code>{{ i.code }}</code>
+          </td>
+          <td>
+            {{ i.duplicated }}
+          </td>
+        </tr>
+      </table>
+    </div>
 
-  <div v-if="mb?.has(prompts)">
-    <table>
-      <tr>
-        <th>编码</th>
-        <th>选重</th>
-      </tr>
-      <tr v-for="i of mb.get(prompts)">
-        <td>
-          <code>{{ i.code }}</code>
-        </td>
-        <td>
-          {{ i.duplicated }}
-        </td>
-      </tr>
-    </table>
-  </div>
-
-  <div v-if="prompts.length && relavantWords.length">
-    <h2>{{ relavantWords.length }} 个相关的词条</h2>
-    <div class="flex">
-      <a
-        v-for="i of relavantWords.slice(0, 100)"
+    <div v-if="prompts.length && relavantWords.length">
+      <h2>{{ relavantWords.length }} 个相关的词条</h2>
+      <div class="flex">
+        <a
+          v-for="i of relavantWords.slice(0, 100)"
+          @click="
+            () => {
+              prompts = i;
+            }
+          "
+          >{{ i }}</a
+        >
+      </div>
+      <button
+        v-if="relavantWords.length > 100 && showMore === false"
         @click="
           () => {
-            prompts = i;
+            showMore = true;
           }
         "
-        >{{ i }}</a
       >
+        显示剩余{{ relavantWords.length - 100 }}个词条…
+      </button>
+      <div class="flex" v-if="showMore">
+        <a
+          v-for="i of relavantWords.slice(100)"
+          @click="
+            () => {
+              prompts = i;
+            }
+          "
+          >{{ i }}</a
+        >
+      </div>
     </div>
-    <button
-      v-if="relavantWords.length > 100 && showMore === false"
-      @click="
-        () => {
-          showMore = true;
-        }
-      "
-    >
-      显示剩余{{ relavantWords.length - 100 }}个词条…
-    </button>
-    <div class="flex" v-if="showMore">
-      <a
-        v-for="i of relavantWords.slice(100)"
-        @click="
-          () => {
-            prompts = i;
-          }
-        "
-        >{{ i }}</a
-      >
-    </div>
+  </template>
+  <div v-else class="warning custom-block">
+    正在加载哲豆音形码表……
   </div>
 </template>
 <style scoped>
