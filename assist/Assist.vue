@@ -28,7 +28,7 @@ onMounted(async () => {
     </tr>
   </table>
 </template>
-<style>
+<style scoped>
 input {
   display: block;
   margin: auto;
