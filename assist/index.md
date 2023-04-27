@@ -2,7 +2,6 @@
 layout: doc
 sidebar: false
 aside: false
-outline: deep
 ---
 <script setup>
 import Assist from "./Assist.vue"
