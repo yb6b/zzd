@@ -1,7 +1,7 @@
 import { withBase } from 'vitepress';
 interface DbItem {
-    code:string
-    duplicated:number
+    code: string
+    duplicated: number
 }
 export type Db = Map<string, DbItem[]>
 
@@ -12,8 +12,9 @@ export async function fetchMb() {
     dict.delete('')
     return dict
 }
+
 async function fetchYong() {
-    const f = await fetch(withBase('/zzdperfect.txt'))
+    const f = await fetch(withBase('/zzdperfect.txt' as string))
     if (f.ok) {
         return await f.text()
     }
@@ -37,7 +38,7 @@ function parseEachLine(line: string, db: Db): void {
     const [code, ...words] = line.split(' ')
     words.forEach((w, i) => {
         const codesInDb = db.get(w)
-        const item = {code,duplicated:i+1}
+        const item = { code, duplicated: i + 1 }
         if (codesInDb)
             codesInDb.push(item)
         else

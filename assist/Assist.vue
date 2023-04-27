@@ -1,14 +1,13 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 import { fetchMb, Db } from "./fetchMb";
 
 const prompts = ref("");
-let mb: Db;
+const mb = ref();
 
-async function getMb() {
-  mb = await fetchMb();
-}
-getMb();
+onMounted(async () => {
+  mb.value = await fetchMb();
+});
 </script>
 
 <template>
