@@ -77,7 +77,7 @@ function getTitle(codes: string) {
   </div>
 </template>
 
-<style>
+<style scoped>
 .entries {
   display: flex;
   flex-wrap: wrap;

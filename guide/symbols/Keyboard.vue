@@ -32,7 +32,7 @@ function calcOpacity(key) {
   </div>
 </template>
 
-<style>
+<style scoped>
 .symbol-kbd {
   text-align: center;
   font-size: smaller;
