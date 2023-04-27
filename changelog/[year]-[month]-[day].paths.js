@@ -12,7 +12,8 @@ export default {
                 month: v.month,
                 day: v.day,
             },
-            content: v.content.join('\n'),
+            content: v.content.join('\r\n'),
         }))
     }
 }
+
