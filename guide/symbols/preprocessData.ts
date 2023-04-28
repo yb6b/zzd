@@ -1,4 +1,5 @@
 import { handleEachline } from '../../assist/fetchMb';
+import {writeFileSync,readFileSync} from 'node:fs';
 
 interface EachWord {
     content: string
@@ -12,11 +13,13 @@ interface Words {
     isLongest: boolean
 }
 
-type SymbolData = Map<string, Words>
+interface SymbolData {
+    [code:string]:Words
+}
 export const Alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
 export function parseRawTsv(src: string): SymbolData {
-    const result: SymbolData = new Map()
+    const result: SymbolData = {}
     handleEachline(src, (line) => {
         const s = line.trimEnd()
         if (s.length === 0) return;
@@ -27,22 +30,22 @@ export function parseRawTsv(src: string): SymbolData {
         const title = a[1] ?? ''
         const description = a[2] ?? ''
         const words = a.slice(3).map(parseWords)
-        result.set(code, {
+        result[code]={
             title,
             description,
             words,
             isLongest: true
-        })
+        }
 
         // 判断是不是最长的编码
         const prefix = code.slice(0, -1)
         if (prefix.length === 0) return
-        const t = result.get(prefix)
+        const t = result[prefix]
         if (t)
             t.isLongest = false
     })
     // 补全空白的标题
-    for (const c of result.keys()) {
+    for (const c in result) {
         fixTitle(result, c)
     }
     return result
@@ -59,17 +62,16 @@ function parseWords(raw: string): EachWord {
 
 
 function fixTitle(src: SymbolData, code: string) {
-    const t = src.get(code)
+    const t = src[code]
     if (!t) return
     if (t.title || t.isLongest) return
 
     const collector: string[] = []
     for (const c of Alphabet) {
-        const l = src.get(code + c)
+        const l = src[code + c]
         if(!l) continue
         const l2 = l.words?.[0]?.content
         if (l2) collector.push(l2)
-
     }
 
     let result = [...new Set(collector)]
@@ -81,3 +83,8 @@ function fixTitle(src: SymbolData, code: string) {
 
     t.title = result.join(' ')
 }
+
+const a= readFileSync('./symbolsData.txt',{encoding:'utf-8'})
+const b = parseRawTsv(a)
+
+writeFileSync('./ESymbols.json',JSON.stringify(b),{encoding:'utf-8'})
