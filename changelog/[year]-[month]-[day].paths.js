@@ -1,8 +1,9 @@
 
-import data from './readLog.js';
+import {readLog} from './readLog.js';
 
 const flatData = []
-data.forEach(v => v[1].forEach(v2 => flatData.push(v2)))
+const LOG= readLog()
+LOG.forEach(v => v[1].forEach(v2 => flatData.push(v2)))
 
 export default {
     paths: () => {

@@ -1,6 +1,7 @@
 import { defineConfig } from "vitepress";
-import data from '../changelog/readLog.js';
+import { readLog } from '../changelog/readLog.js';
 
+const data: any[][] = readLog()
 const changelogConfig: any[] = data.map(v => ({
   text: v[0],
   collapsed: true,
