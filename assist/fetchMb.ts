@@ -21,7 +21,7 @@ async function fetchYong() {
     throw Error('无法下载码表文件')
 }
 
-function handleEachline(src: string, handler: (line: string) => void) {
+export function handleEachline(src: string, handler: (line: string) => void) {
     const search = /\r?\n|\r/g
     let match = search.exec(src)
     let last = 0

@@ -1,37 +1,13 @@
 <script setup lang="ts">
-import { DataE } from "./SymbolsDataUnderE";
 import { ref, computed } from "vue";
+import rawData from "./SymbolsData.txt?raw";
+import { parseRawTsv } from "./preprocessData";
+const Data = parseRawTsv(rawData);
 const codes = ref("e");
 
 function calcOpacity(keyName: string) {
   if (";,./".includes(keyName)) return 0.7;
   return 1;
-}
-
-function getTitle(codes: string) {
-  const data = DataE?.[codes];
-  if (!data) return "";
-  if (data[0].length) return data[0];
-
-  // TODO 尽量不要用自动生成的标题
-  let result: string[] = [];
-  const childData = data[1];
-  for (const i of Object.values(childData)) {
-    if (typeof i[0] === "string") {
-      result.push(i[0]);
-    } else {
-      result.push(i[0].words);
-    }
-  }
-
-  result = [...new Set(result)];
-  const rl = result.length;
-  if (rl > 4) {
-    const base = Math.floor(rl / 3);
-    result = result.filter((_, i) => i % base === 1);
-  }
-
-  return result.join(" ");
 }
 </script>
 
@@ -39,9 +15,9 @@ function getTitle(codes: string) {
   <input v-model="codes" placeholder="至少写个e" />
   <h2>
     <code>{{ codes }}</code>
-    {{ getTitle(codes) }}
+    {{ Data.get(codes)?.title }}
   </h2>
-  <p v-html="DataE?.[codes]?.[2]"></p>
+  <p v-html="Data.get(codes)?.description"></p>
   <button
     v-if="codes.length > 1"
     @click="
@@ -58,11 +34,16 @@ function getTitle(codes: string) {
       :style="{ opacity: calcOpacity(key) }"
     >
       <div class="symbol-keyname" v-text="key"></div>
-      <div class="entries" v-if="DataE?.[codes][1]?.[key]">
-        <div v-for="e of DataE?.[codes][1]?.[key]" v-text="e"></div>
+      <div class="entries" v-if="Data.has(codes + key)">
+        <span v-for="e of Data.get(codes + key)?.words"
+          >{{ e.content
+          }}<sup v-if="e.detail" class="info">{{ e.detail }}</sup></span
+        >
       </div>
-      <template v-if="DataE?.[codes + key]">
-        <hr style="margin: 0;">
+      <template
+        v-if="Data.has(codes + key) && !Data.get(codes + key)?.isLongest"
+      >
+        <hr style="margin: 0" />
         <button
           @click="
             () => {
@@ -70,7 +51,7 @@ function getTitle(codes: string) {
             }
           "
         >
-          {{ getTitle(codes + key) }}
+          {{ Data.get(codes + key)?.title }}
         </button>
       </template>
     </div>
@@ -78,6 +59,13 @@ function getTitle(codes: string) {
 </template>
 
 <style scoped>
+.info {
+  color: gray;
+  background-color: bisque;
+  margin: 2px 4px;
+  word-break: keep-all;
+  padding: 1px 4px;
+}
 .entries {
   display: flex;
   flex-wrap: wrap;
@@ -85,6 +73,7 @@ function getTitle(codes: string) {
 
 .entries > div {
   margin-left: 4px;
+  font-size: xx-small;
 }
 
 button {
@@ -98,7 +87,7 @@ input {
   border-radius: 5rem;
   padding: 0.3rem;
   font-family: monospace;
-  padding: .2rem 1rem;
+  padding: 0.2rem 1rem;
   display: block;
   margin: auto;
 }
