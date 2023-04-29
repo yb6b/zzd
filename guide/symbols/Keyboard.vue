@@ -37,8 +37,9 @@ function calcOpacity(key) {
   text-align: center;
   font-size: smaller;
   min-width: 26rem;
-  overflow-x: auto;
-  background-color: darkgray;
+  width: fit-content;
+  max-width: 90vw;
+  background-color: rgba(90, 90, 90, 0.32);
   padding: 0.4rem 0.3rem;
   border-radius: 8px;
   display: grid;

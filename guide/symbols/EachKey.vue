@@ -21,7 +21,7 @@ const codes = inject("code");
   </div>
 </template>
 
-<style >
+<style scoped>
 .content {
   display: flex;
   justify-content: center;
