@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { ref, provide } from "vue";
+import type { Ref } from "vue";
 import FormatTable from "./FormatTable.vue";
 import FormatKbd from "./FormatKbd.vue";
 import Data from "./ESymbols.json";
 const codes = ref("e");
 provide("code", codes);
+const kbdStyle: Ref<"a" | "l" | "r"> = ref("a");
 </script>
 
 <template>
@@ -13,7 +15,8 @@ provide("code", codes);
     <code>{{ codes }}</code>
     {{ Data[codes]?.title }}
   </h2>
-  <button :disabled="codes.length < 2"
+  <button
+    :disabled="codes.length < 2"
     @click="
       () => {
         codes = codes.slice(0, -1);
@@ -24,7 +27,10 @@ provide("code", codes);
   </button>
   <div v-html="Data[codes]?.description"></div>
   <template v-if="Data[codes]">
-    <FormatKbd v-if="Data[codes].description.includes('键盘')" />
+    <FormatKbd
+      v-if="Data[codes].description.includes('键盘')"
+      :kbdstyle="Data[codes].description.includes('左手键盘') ? 'l' : kbdStyle"
+    />
     <FormatTable v-else />
   </template>
 </template>
@@ -35,12 +41,18 @@ button {
   display: inline-block;
   padding: 2px 4px;
   font-size: medium;
-  margin-bottom: .6rem;
+  margin-bottom: 0.6rem;
+  transition: 0.5s;
 }
 
-button:disabled{
-  opacity: .5;
-  color: darkolivegreen;
+button:disabled {
+  opacity: 0.4;
+  color: gray;
+}
+
+button:hover {
+  text-shadow: 0 0 5px var(--vp-c-brand);
+  color: var(--vp-c-brand-darker);
 }
 
 input {

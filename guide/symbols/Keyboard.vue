@@ -1,5 +1,4 @@
 <script setup>
-import { withBase } from "vitepress";
 const p = defineProps({ data: Object, prefix: String });
 
 const keys = "qwertyuiopasdfghjkl;zxcvbnm,./";

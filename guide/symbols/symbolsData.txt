@@ -2372,12 +2372,12 @@ eqzl			㊗	zł##波兰兹罗提
 eqzn			㊪
 eqzo			㊥
 eqzz			ⓩ
-er	箭头		⇒	➯
-erb			∃!
+er	箭头	键盘上很有规律，围绕d键辐射状。	⇒	➯
+erb		左手键盘	∃!
 erbd			↭
 erbf			⇝	↝	⟿	⤳
 erbs			⇜	↜	⬳	⬿
-erc			↓	∨	⍗	⤈	⍖	⥕	⥙	↡
+erc		左手键盘	↓	∨	⍗	⤈	⍖	⥕	⥙	↡
 ercc			⇊	⥥	⥾
 erce			⥯	⥿
 ercf			↣	⤚	⥼	⤔	⤜	⤕	⤖	⤗	⤘
@@ -2389,24 +2389,24 @@ ercz			∃	∃!
 erd			↔	↕	⇔	≡	:=	⥊	⥋	⥌	⥍	⥎	⥏	⥐	⥑	↮
 erdt			↶
 erdy			:=	≡	:⇔
-ere			↑	∧	⍐	⤉	⮸	⍏	↟
+ere	向上箭头	左手键盘	↑	∧	⍐	⤉	⮸	⍏	↟
 erec			⇅	⥮
 eree			⇈	⥣
 erer			↱	⮳	⮣	⮫	➦
 erew			↰	⮲	⮢	⮪
-erf			→	➤	➢	➣	⍈	⥅	⥬	⥱	⥲	⥴	⥵	¬	⥭	⥸	⥹	⍆	↠	↛
+erf	向右的箭头	左手键盘。	→	➤	➢	➣	⍈	⥅	⥬	⥱	⥲	⥴	⥵	¬	⥭	⥸	⥹	⍆	↠	↛
 erff			⇉	⥤
 erfr			⤴	⮵	⮥	⮭	⬏
 erfs			⇌	⇄	⥂	⥄	⥨	⥩
 erfv			⤵	⮷	⮧	⮯	↴	⬎
-erg			
+erg		左手键盘	
 ergf			↪	↬
 ergr			⤤
 ergs			↩	↫
 ergv			⤥
 ergw			⤣
 ergx			⤦
-erh			⇌	∨
+erh		键盘有规律	⇌	∨
 erhc			⬇	⏎
 erhd			⬌	⬍	≡
 erhe			⬆
@@ -2425,11 +2425,11 @@ erid			↨
 erie			↥	⤒	⥔	⥜	⥘	⥠
 erif			⇥	⟾	⤠	↦	⟼	⤇	⟼	⤅	⥓	⥗	⥛	⥟	⤠	⤞
 eris			⇤	⟽	⤟	↤	⟻	⤆	⟻	⥒	⥖	⥚	⥞	⤝	⤟	⬴	⬵	⬶	⬾
-erj			➳
+erj	弓箭➸➷	左手键盘	➳
 erjf			➵	➸	➳
 erjr			➶	➹
 erjv			➴	➷
-erk			
+erk	空心箭头⇨	键盘上有规律	
 erkc			⇩
 erkd			⇔	⬄
 erke			⇧	⇪
@@ -2439,7 +2439,7 @@ erks			⇦
 erkv			⬂
 erkw			⬁
 erkx			⬃
-erl			➯
+erl	立体	键盘上有规律	➯
 erla			➪
 erld			➬
 erlf			➩	➪	➫	➬	➭	➮	➲	➱
@@ -2453,12 +2453,12 @@ erm			↻	∀
 ermg			∀
 ern			↺	⮔
 erns			↶	⤺	⤹	⤻	⥀	⟲	⤽	⤿	⮔	↺
-ero			⮊
+ero		左手键盘	⮊
 eroc			⮋
 eroe			⮉
 erof			⮊
 eros			⮈
-erq			➠
+erq		看看键盘。	➠
 erqa			➾
 erqd			➝
 erqe			⥉
@@ -2480,12 +2480,12 @@ erqw			➻
 erqx			დ
 erqy			➞
 erqz			⥇
-err			↗	⤯
+err		左手键盘	↗	⤯
 errv			⤨	⤭	⤮
 errw			⤧	⤱	⤲
 errx			⤢
 erry			∀
-ers			←	↻	⍇	⥆	⥪	⥫	⥳	⥶	⥷	⥺	⥻	⍅	↞	↚
+ers	向左的箭头	左手键盘	←	↻	⍇	⥆	⥪	⥫	⥳	⥶	⥷	⥺	⥻	⍅	↞	↚
 ersc			⌫
 ersd			↯
 ersf			⇋	⇆	⥃	⥦	⥧
@@ -2493,7 +2493,7 @@ erss			⇇	↷	⥁	⟳	⤼	⤸	↻	⥢	⬱
 ersw			⮴	⮤	⮬	⬑
 ersx			⮶	⮦	⮮	⬐
 ersy			∀
-ert			⇒
+ert	双线样式⇘⌫	左手键盘	⇒
 ertb			⇏	⤃
 ertc			⤋	⊃	⟱	⟹	⥰
 ertd			⇔	⇎	⇕	⟺	⤄
@@ -2505,21 +2505,21 @@ erts			⟸	⇍	⇚	⤂
 ertv			⇘
 ertw			⇖
 ertx			⇙
-eru			⮏
+eru		左手键盘	⮏
 eruc			⮏
 erue			⮍
 eruf			⮎	⮓
 erus			⮌	⮒
-erv			↘	⤰
+erv		左手键盘	↘	⤰
 ervr			⤨	⤭	⤮
 ervw			⤡
 ervx			⤩
-erw			↖	⇱
+erw		左手键盘	↖	⇱
 erwc			↯
 erwr			⤧	⤱	⤲
 erwv			⤡	☇	☈
 erwx			⤪
-erx			↙
+erx		左手键盘	↙
 erxc			⇣
 erxe			⇡
 erxf			⇢	⤑	⤐	⤏	⤍
@@ -2529,7 +2529,7 @@ erxs			⇠	⬸	⤎	⤌
 erxu			∨
 erxv			⤩
 erxw			⤪
-ery			➢
+ery		键盘上有规律。	➢
 erya			➤
 eryc			⮛	⮟
 eryd			➣
@@ -2538,7 +2538,7 @@ eryf			➣	➤	➢	⮞	⮚
 eryh			⊕	⊻	⊃
 erym			⊕	⊻
 erys			⮘	⮜
-erz			⇥
+erz		左手键盘	⇥
 erzc			↥	↨
 erze			↧
 erzf			⇥	↤
