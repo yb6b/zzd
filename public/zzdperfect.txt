@@ -359,7 +359,6 @@ aivf 啊
 aiwq 癌症晚期
 aiwu 癌症晚期
 aiwy 安枕无忧
-aixb 呆小病
 aixi 暗中相助
 aiy 哎哟 唉呀
 aiyi 哎呀 唉呀 哎哟
@@ -3533,9 +3532,10 @@ bif 哺
 bifa 编制方案
 bifk 哺
 bigc 不足挂齿
-bigg 别干 保证供给
+bigg 别干
 bigh 蹦高
 bigi 本职工作
+bigj 保证供给
 bign 别怪 保值功能
 bigo 别国
 bigt 别管
@@ -7258,9 +7258,9 @@ bzfz 办发
 bzg 办公处
 bzgc 不足挂齿 办公处
 bzgf 办公费
-bzgg 保证供给
 bzgh 办公会
 bzgi 办公桌
+bzgj 保证供给
 bzgl 办公楼
 bzgm 办公 边关
 bzgn 保值功能
@@ -19705,7 +19705,7 @@ ecsz 二次世界大战 🍅
 ecwx 二次文献
 ed 洱 🐢 🐾 🐸
 eddl 额定电流
-eddy 额定电压 ,
+eddy 额定电压
 edf 洱
 edfd 洱
 edfi 二道贩子
@@ -19883,6 +19883,7 @@ egch 二次 ⎚ 📟
 egci 二重奏 🔍 🔨 🔱 🔎
 egcs 二传手 🚾 🛒 🏪
 egct 二重 🔌
+egcy 二次元
 egcz 二重奏 🔍 🔨 🔱 🔎
 egda 二大
 egde 厄瓜多尔
@@ -34030,6 +34031,7 @@ hqhd 航海 后汉
 hqhh 忽前忽后
 hqhj 后会
 hqhl 后话 合情合理
+hqhm 好奇害死猫
 hqhn 后悔
 hqho 后患
 hqhr 华侨华人
@@ -34156,6 +34158,7 @@ hqxd 后现代
 hqxh 后效
 hqxk 航行
 hqxl 后心
+hqxm 好奇心害死猫
 hqxn 后学
 hqxq 祸起萧墙
 hqxr 航向 寒气袭人
@@ -34284,7 +34287,7 @@ hrml 晦冥
 hrmx 毁灭性
 hrn 遑
 hrnn 遑
-hrny 画人难,画鬼易
+hrny 画人难，画鬼易
 hrpl 皇袍
 hrqc 皇权
 hrqh 皇亲 毁弃
@@ -34895,6 +34898,7 @@ huha 壕
 huhc 何去何从
 huhh 忽前忽后
 huhl 坏话 合情合理
+huhm 好奇害死猫
 huhn 恚恨
 huhr 华侨华人
 huhu 赫赫
@@ -34954,6 +34958,7 @@ huwz 豪情万丈
 huxb 坏血病
 huxg 坏习惯
 huxl 坏心
+huxm 好奇心害死猫
 huxq 祸起萧墙
 huxr 寒气袭人
 huxt 坏笑 花拳绣腿
@@ -36481,9 +36486,8 @@ idgt 溱
 idgx 重大贡献 自动更新
 idh 注
 idhd 漳河 注
-idhj 淬 沾化
+idhj 沾化
 idhl 直捣黄龙
-idhm 淬火
 idho 治黑
 idhq 滞后
 idhr 漳
@@ -43313,6 +43317,7 @@ jcjo 极具 机具
 jcjq 极近
 jcjr 检举人
 jcjs 基础建设
+jcjt 极简
 jcjv 机降
 jcjx 禁绝 基础教学
 jcjy 即插即用 惊才绝艳 基础教育
@@ -43633,14 +43638,14 @@ jdji 监督机制
 jdjj 亟待解决
 jdjl 酒劲
 jdjm 酒精
-jdjn 酒家
+jdjn 酒驾 酒家
 jdjo 洁具 酒具
 jdjp 激进派
 jdjq 渐近
 jdjr 绝代佳人 涧
 jdjs 江姐 军队建设
 jdjx 渐近线
-jdjz 监督机制
+jdjz 酒驾 监督机制
 jdki 江口
 jdkj 尖端科技
 jdkn 渐宽 极端困难 酒客
@@ -56887,7 +56892,6 @@ lqli 另起炉灶
 lqlz 另起炉灶
 lqmd 录取名单
 lqpc 录取批次
-lqqc 礼轻情义重
 lqqd 琉球群岛
 lqqi 礼轻情意重
 lqqk 录取情况
@@ -57641,7 +57645,6 @@ lutn 临头
 luto 临帖 临
 luts 录取通知书
 lutz 录取通知
-luuc 礼轻情义重
 luud 琉球群岛 临泣
 luui 礼轻情意重
 luuk 录取情况
@@ -81266,7 +81269,7 @@ qsgd 全省各地
 qsgh 泉石膏肓
 qsgf 轻工 轻功 轻歌
 qsgi 全神贯注
-qsgj 七个 切割机 泉石膏肓,烟霞痼疾
+qsgj 七个 切割机 泉石膏肓，烟霞痼疾
 qsgm 切糕
 qsgn 切割
 qsgr 亲生骨肉
@@ -86609,8 +86612,10 @@ seo 薯
 seof 薯
 sepb 十二皮部
 sepd 数额庞大
+sepn 苕皮
 sepn 蒜皮
 sepr 薯片
+sepz 苕皮
 sepz 蒜皮
 seqg 苏秦
 seqm 萨琪玛
@@ -88414,7 +88419,7 @@ ski 损 摄制 扫帚星
 skia 拴在 撒在
 skib 扫帚 实况转播
 skic 手札 手杖
-skif 摄政 逝者
+skif 逝者 手抓饭 摄政
 skih 生克制化
 skii 手足 摄制组 书刊杂志
 skij 手掌 手闸
@@ -88625,7 +88630,7 @@ skz 势 手指头 扫帚星
 skza 拴在 撒在
 skzb 扫帚 实况转播
 skzc 手札 手杖
-skzf 摄政 逝者
+skzf 逝者 手抓饭 摄政
 skzh 生克制化
 skzi 手足
 skzj 手掌 手闸
@@ -95365,7 +95370,7 @@ tlbr 天理不容
 tlbs 谈不上 台北市
 tlbu 通鼻窍
 tlbv 台胞
-tlby 台北 桃李不言 讨便宜 台步
+tlby 台北 桃李不言 台步
 tlbz 台办
 tlca 谈成
 tlce 通草
@@ -95526,7 +95531,7 @@ tlpm 谈判 通判
 tlpn 调皮
 tlpq 通盘
 tlpt 通篇
-tlpy 调频 通铺
+tlpy 调频 讨便宜 通铺
 tlpz 调皮 谈判桌
 tlqc 通勤车
 tlqf 通勤 讨巧
@@ -101291,7 +101296,7 @@ usgd 全省各地
 usgf 轻工 轻功 轻歌
 usgh 泉石膏肓
 usgi 全神贯注
-usgj 七个 切割机 泉石膏肓,烟霞痼疾
+usgj 七个 切割机 泉石膏肓，烟霞痼疾
 usgm 切糕
 usgn 切割
 usgr 亲生骨肉
@@ -118437,7 +118442,7 @@ ypgw 应聘岗位
 yphr 一片哗然
 ypht 一片欢腾
 yphy 一派胡言
-ypid 一瓶子不满,半瓶子晃荡 一瓶子不响,半瓶子晃荡
+ypid 一瓶子不满，半瓶子晃荡 一瓶子不响，半瓶子晃荡
 ypii 鸦片战争
 ypil 一拼之力
 ypjh 一拍即合
@@ -118469,7 +118474,7 @@ ypyp 一批又一批
 ypyq 应聘要求
 ypyu 应聘要求
 ypyx 一颦一笑
-ypzd 一瓶子不满,半瓶子晃荡 一瓶子不响,半瓶子晃荡
+ypzd 一瓶子不满，半瓶子晃荡 一瓶子不响，半瓶子晃荡
 ypzl 一拼之力
 ypzz 鸦片战争
 yqah 一切安好
@@ -121710,9 +121715,8 @@ zdgx 自动更新 重大贡献
 zdgz 涨工资 指导工作
 zdh 注
 zdhd 漳河 注
-zdhj 淬 沾化
+zdhj 沾化
 zdhl 直捣黄龙
-zdhm 淬火
 zdho 治黑
 zdhq 滞后
 zdhr 漳
@@ -128389,6 +128393,7 @@ ekfd 〖
 ekfk 〗
 ekfs 〚
 ekfl 〛
+ekg 　
 ekyj 』
 ekyd 「
 ekyk 」
@@ -129823,7 +129828,6 @@ edml 😾
 edmy 🐜 🐑
 edn 🐮 🐂 🐃 🐄
 ednn 🐄
-edp ,
 edpc 🐞
 edpx 🦀
 edqe 🐧
@@ -129872,7 +129876,7 @@ edym ɯ 🌽
 edyl ן Γ
 edyk ʞ
 edyi ı̣ 🦆 🐗
-edyh ɥ ,
+edyh ɥ
 edyg ɓ
 edyf ɟ
 edyc ɔ

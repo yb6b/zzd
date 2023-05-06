@@ -1337,6 +1337,7 @@ ekfj			】
 ekfk			〗
 ekfl			〛
 ekfs			〚
+ekg	全角空格		　
 eki	中括号	在键盘上左右对称。	
 ekid			[
 ekif			［
