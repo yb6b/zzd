@@ -48,7 +48,12 @@ export const latestUpdate = () => {
 
 
 function handleEachline(line) {
-    return line.replaceAll('<', '&lt;')
+    const r =  (line.replaceAll('&', '&amp;') 
+    .replaceAll('<', '&lt;')
+    .replaceAll(' ', '&ensp;')
+    .replaceAll('>', '&gt;'))
+    //console.log(r);
+    return `${r}<br>`
 }
 
 function formatNumber(n) {
