@@ -40,6 +40,7 @@ const codes = inject("code");
   padding: 6px 5px;
   width: 4rem;
   min-width: 3.5rem;
+  min-height: 5rem;
 }
 .keyname {
   user-select: none;
