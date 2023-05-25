@@ -1,7 +1,6 @@
 import { defineConfig } from "vitepress";
 import { sidebarOptions } from './sidebarOptions';
 import { searchOptions } from './searchOptions';
-import { } from '../changelog/generateMd.js'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
