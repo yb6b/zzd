@@ -1,5 +1,6 @@
 import { defineConfig } from "vitepress";
 import { readLog } from '../changelog/readLog.js';
+import { } from '../changelog/generateMd.js'
 
 const data: any[][] = readLog()
 const changelogConfig: any[] = data.map(v => ({

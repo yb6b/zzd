@@ -1,5 +1,6 @@
-.vitepress/cache
-.vitepress/dist
-.vitepress/.temp
+docs/.vitepress/cache
+docs/.vitepress/dist
+docs/.vitepress/.temp
 node_modules
 ___*
+docs/changelog/2*.md

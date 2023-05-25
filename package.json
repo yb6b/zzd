@@ -4,9 +4,9 @@
   "description": "哲豆音形的介绍网站",
   "private": true,
   "scripts": {
-    "dev": "vitepress dev",
-    "build": "vitepress build",
-    "preview": "vitepress preview"
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
   },
   "keywords": [],
   "author": "yb6b <seetxx@qq.com>",
