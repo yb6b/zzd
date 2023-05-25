@@ -37,6 +37,7 @@ function parseEachLine(line: string, db: Db): void {
     if (line.length === 0) return
     const [code, ...words] = line.split(' ')
     words.forEach((w, i) => {
+        w = w.replace('$_', ' ').replace('$$', '$') // 小小的转义
         const codesInDb = db.get(w)
         const item = { code, duplicated: i + 1 }
         if (codesInDb)

@@ -55,7 +55,7 @@ const limitArray = (src: string[][]) => {
 <template>
   <template v-if="mb">
     <input v-model="prompts" placeholder="输入要查询的字词" />
-    <div v-if="mb.has(prompts)" style="display:flex; justify-items:center">
+    <div v-if="mb.has(prompts)" style="display: flex; justify-content: center">
       <table style="">
         <tr>
           <th>编码</th>
