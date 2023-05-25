@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
-let logData = readFileSync(resolve(__dirname, './log.txt'), { encoding: 'utf-8' })
+let logData = readFileSync(resolve(__dirname, '../public/log.txt'), { encoding: 'utf-8' })
 
 
 export const readLog = () => {
@@ -48,10 +48,10 @@ export const latestUpdate = () => {
 
 
 function handleEachline(line) {
-    const r =  (line.replaceAll('&', '&amp;') 
-    .replaceAll('<', '&lt;')
-    .replaceAll(' ', '&ensp;')
-    .replaceAll('>', '&gt;'))
+    const r = (line.replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll(' ', '&ensp;')
+        .replaceAll('>', '&gt;'))
     //console.log(r);
     return `${r}<br>`
 }

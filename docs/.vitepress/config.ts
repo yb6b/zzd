@@ -1,24 +1,14 @@
 import { defineConfig } from "vitepress";
-import { readLog } from '../changelog/readLog.js';
+import { sidebarOptions } from './sidebarOptions';
+import { searchOptions } from './searchOptions';
 import { } from '../changelog/generateMd.js'
-
-const data: any[][] = readLog()
-const changelogConfig: any[] = data.map(v => ({
-  text: v[0],
-  collapsed: true,
-  items: v[1].map(v2 => ({
-    text: `${v2.year}-${v2.month}-${v2.day}`,
-    link: `/changelog/${v2.year}-${v2.month}-${v2.day}`
-  }))
-}))
-
-changelogConfig.unshift({ text: '更新历史', link: '/changelog/' })
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/zzd/",
   lang: "zh-cn",
   title: "哲豆音形",
+  outDir: '../dist',
   description: "简单、顺手、成熟的两笔输入法。",
   head: [
     [
@@ -48,53 +38,7 @@ export default defineConfig({
       { text: "反查", link: "/assist/" },
     ],
 
-    sidebar: {
-      "/guide": [
-        {
-          items: [
-            { text: "介绍", link: "/guide/" },
-            {
-              text: "单字输入",
-              link: "/guide/zi/",
-              collapsed: false,
-              items: [
-                { text: "拆分示范", link: "/guide/zi/examples" },
-                { text: "拆分小结", link: "/guide/zi/summary" },
-                { text: "拆分原理", link: "/guide/zi/principles" },
-                { text: "飞键", link: "/guide/zi/feijian" },
-                { text: "简码重码", link: "/guide/zi/brief" },
-                { text: "反查", link: "/guide/zi/assist" },
-              ],
-            },
-            { text: "词语输入", link: "/guide/words" },
-            {
-              text: "符号输入",
-              link: "/guide/symbols/",
-              collapsed: false,
-              items: [
-                { text: "V 键", link: "/guide/symbols/v" },
-                { text: "E 键", link: "/guide/symbols/e" },
-              ],
-            },
-            {
-              text: "命令直通车",
-              link: "/guide/commands/",
-              collapsed: true,
-              items: [
-                { text: "多多平台", link: "/guide/commands/duoduo" },
-                { text: "小小平台", link: "/guide/commands/yong" },
-              ],
-            },
-            { text: "感谢", link: "/guide/contributors" },
-          ],
-        },
-      ],
-      "/changelog": [
-        {
-          items: changelogConfig
-        }
-      ],
-    },
+    sidebar: sidebarOptions,
 
     socialLinks: [
       { icon: "github", link: "https://github.com/yb6b/zzd" },
@@ -124,29 +68,8 @@ export default defineConfig({
     sidebarMenuLabel: "目录",
     returnToTopLabel: "返回顶部",
     search: {
-      provider: "local",
-      options: {
-        translations: {
-          button: {
-            buttonAriaLabel: "搜索",
-            buttonText: "搜索标题",
-          },
-          modal: {
-            displayDetails: "详细展示",
-            resetButtonTitle: "清空",
-            noResultsText: "搜索不到，换个关键词",
-            backButtonTitle: "返回",
-            footer: {
-              selectText: "选择",
-              navigateText: "浏览",
-              navigateDownKeyAriaLabel: "下键",
-              navigateUpKeyAriaLabel: "上键",
-              closeKeyAriaLabel: "关闭",
-              closeText: "取消搜索",
-            },
-          },
-        },
-      },
-    },
+      provider: 'local',
+      options: searchOptions,
+    }
   },
 });
