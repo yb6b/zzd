@@ -9,6 +9,7 @@ hero:
   name: 哲豆音形
   text: 两笔输入法
   tagline: 二十年坚持更新
+  image: /zzd-logo.svg
   actions:
     - theme: brand
       text: 开始学习
@@ -39,3 +40,10 @@ features:
     link: /join/
     linkText: 联系方式
 ---
+<script setup>
+import {onMounted} from 'vue'
+onMounted(()=>{
+  const img = document.querySelector('img.VPImage.image-src')
+  img.style.height = '8rem'
+})
+</script>
