@@ -2430,7 +2430,7 @@ erj	弓箭➸➷	左手键盘	➳
 erjf			➵	➸	➳
 erjr			➶	➹
 erjv			➴	➷
-erk	空心箭头⇨	键盘上有规律	
+erk	空心箭头⇨	左手键盘上有规律	
 erkc			⇩
 erkd			⇔	⬄
 erke			⇧	⇪

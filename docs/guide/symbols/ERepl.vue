@@ -1,12 +1,26 @@
 <script setup lang="ts">
 import { ref, provide } from "vue";
 import type { Ref } from "vue";
+import { onMounted, watch } from "vue";
 import FormatTable from "./FormatTable.vue";
 import FormatKbd from "./FormatKbd.vue";
 import Data from "./ESymbols.json";
 const codes = ref("e");
 provide("code", codes);
 const kbdStyle: Ref<"a" | "l" | "r"> = ref("a");
+watch(codes, (n) => {
+  window.location.hash = n;
+  window.document.title = `〖${n}〗 e键下的符号 | 哲豆音形`;
+  codes.value = n;
+});
+onMounted(() => {
+  let oldHash = window.location.hash.slice(1);
+  if (oldHash.length === 0) {
+    oldHash = "e";
+    window.location.hash = oldHash;
+  }
+  codes.value = oldHash;
+});
 </script>
 
 <template>
@@ -23,7 +37,7 @@ const kbdStyle: Ref<"a" | "l" | "r"> = ref("a");
       }
     "
   >
-    ⮜ 返回上一级
+    ⬅ 返回上一级
   </button>
   <div v-html="Data[codes]?.description"></div>
   <template v-if="Data[codes]">
