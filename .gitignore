@@ -4,4 +4,3 @@ docs/.vitepress/.temp
 dist
 node_modules
 ___*
-docs/changelog/2*.md
