@@ -5,11 +5,15 @@ interface DbItem {
 }
 export type Db = Map<string, DbItem[]>
 
+let cache: Db;
 export async function fetchMb() {
+    if (cache) {
+        return cache
+    }
     const dict: Db = new Map()
-
     handleEachline(await fetchYong(), (line) => parseEachLine(line, dict))
     dict.delete('')
+    cache = dict
     return dict
 }
 
