@@ -12,13 +12,13 @@ a {
 }
 
 :root {
-  --vp-c-brand: #c69300;
-  --vp-c-brand-light: #daa200;
-  --vp-c-brand-lighter: #f1b400;
-  --vp-c-brand-lightest: #ffd47d;
-  --vp-c-brand-dark: #b88900;
-  --vp-c-brand-darker: #a27800;
-  --vp-c-brand-dimm: rgba(113, 113, 115, 0.08);
+  --vp-c-brand: #b45309;
+  --vp-c-brand-light: #d97706;
+  --vp-c-brand-lighter: #f59e0b;
+  --vp-c-brand-lightest: #fbbf24;
+  --vp-c-brand-dark: #92400e;
+  --vp-c-brand-darker: #78350f;
+  --vp-c-brand-dimm: #b4530911;
 }
 
 /**
