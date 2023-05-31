@@ -1,49 +1,20 @@
 <script setup lang="ts">
-import { ref } from "vue";
-import { fetchMb } from "./fetchMb";
-import ShowTable from "./ShowTable.vue";
-import RelavantWords from "./RelavantWords.vue";
+import { ref, onMounted, Ref } from "vue";
+import { fetchMb, Db } from "./fetchMb";
+import Main from "./Main.vue";
 
-const prompts = ref("");
-
-let mb = await fetchMb();
+const mb: Ref<Db | undefined> = ref();
+onMounted(() => {
+  fetchMb().then((v) => (mb.value = v));
+});
 </script>
 
 <template>
-  <input v-model="prompts" placeholder="输入要查询的字词" />
-
-  <ShowTable v-if="mb.has(prompts)" :mb="mb" :prompts="prompts" />
-
-  <RelavantWords
-    v-if="prompts.length"
-    :mb="mb"
-    :prompts="prompts"
-    @new-prompt="(j) => (prompts = j)"
-  />
-
-  <template v-if="mb.has(prompts)">
-    <h2>汉典</h2>
-    <iframe
-      :src="`https://www.zdic.net/hans/${encodeURI(prompts)}`"
-      frameborder="0"
-      width="100%"
-      height="400vh"
-      seamless
-      sandbox=""
-    ></iframe>
-  </template>
+  <div
+    style="text-align: center; color: var(--vp-c-brand-dimm)"
+    v-if="typeof mb === 'undefined'"
+  >
+    正在加载哲豆码表……
+  </div>
+  <Main v-else :mb="mb" />
 </template>
-<style scoped>
-input {
-  display: block;
-  margin: auto;
-  padding: 4px 12px;
-  text-align: center;
-  border-radius: 2em;
-  border: 2px solid var(--vp-c-brand-dark);
-  transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s;
-}
-input:focus {
-  box-shadow: 0 4px 1px var(--vp-c-brand);
-}
-</style>

@@ -1,7 +1,5 @@
-import { withBase } from 'vitepress';
 interface DbItem {
     code: string
-    duplicated: number
 }
 export type Db = Map<string, DbItem[]>
 
@@ -18,7 +16,7 @@ export async function fetchMb() {
 }
 
 async function fetchYong() {
-    const f = await fetch(withBase('/zzdperfect.txt' as string))
+    const f = await fetch('/zzd/zzdperfect.txt')
     if (f.ok) {
         return await f.text()
     }
