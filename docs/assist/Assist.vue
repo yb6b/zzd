@@ -11,7 +11,7 @@ onMounted(() => {
 
 <template>
   <div
-    style="text-align: center; color: var(--vp-c-brand-dimm)"
+    style="text-align: center; color: grey"
     v-if="typeof mb === 'undefined'"
   >
     正在加载哲豆码表……
