@@ -1,18 +1,20 @@
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
+import { ref } from "vue";
 import ShowTable from "./ShowTable.vue";
 import type { Db } from "./fetchMb";
+import { refDebounced } from "@vueuse/core";
 import RelavantWords from "./RelavantWords.vue";
 
 defineProps<{
   mb: Db;
 }>();
 
-const prompts = ref("");
+const promptsR = ref("");
+const prompts = refDebounced(promptsR, 200);
 </script>
 
 <template>
-  <input v-model="prompts" placeholder="输入要查询的字词" />
+  <input v-model="promptsR" placeholder="输入要查询的字词" />
 
   <ShowTable v-if="mb.has(prompts)" :mb="mb" :prompts="prompts" />
 
@@ -20,7 +22,7 @@ const prompts = ref("");
     v-if="prompts.length"
     :mb="mb"
     :prompts="prompts"
-    @new-prompt="(j) => (prompts = j)"
+    @new-prompt="(j) => (promptsR = j)"
   />
 
   <template v-if="mb.has(prompts)">
