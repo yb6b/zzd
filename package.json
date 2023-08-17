@@ -12,8 +12,8 @@
   "author": "yb6b <seetxx@qq.com>",
   "license": "Apache-2",
   "devDependencies": {
-    "@vueuse/core": "^10.2.1",
-    "vitepress": "1.0.0-beta.1",
+    "@vueuse/core": "^10.3.0",
+    "vitepress": "1.0.0-rc.4",
     "vue": "^3.3.4"
   }
 }
