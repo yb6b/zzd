@@ -1,19 +1,16 @@
 import type { ShallowReactive } from "vue";
-interface DbItem {
-  code: string;
-}
-export type Db = Map<string, DbItem[]>;
+import { withBase } from "vitepress";
 
-let cache: Db;
+let G_mbCache: Db;
+const G_mbUrl = withBase("assist.json");
+
+export type Db = Record<string, string>;
 export async function fetchMb(p: ShallowReactive<IProgress>) {
-  if (cache) {
-    return cache;
+  if (G_mbCache) {
+    return G_mbCache;
   }
-  const dict: Db = new Map();
-  handleEachline(await fetchYong(p), (line) => parseEachLine(line, dict));
-  dict.delete("");
-  cache = dict;
-  return dict;
+  const database = await fetchJson(p);
+  return database;
 }
 
 interface IProgress {
@@ -21,8 +18,8 @@ interface IProgress {
   current: number;
 }
 
-async function fetchYong(p: ShallowReactive<IProgress>) {
-  const f = await fetch("/zzd/zzdperfect.txt");
+async function fetchJson(p: ShallowReactive<IProgress>) {
+  const f = await fetch(G_mbUrl);
   if (f.ok) {
     const contentLength = Number(f.headers.get("Content-Length"));
     p.max = contentLength;
@@ -44,31 +41,7 @@ async function fetchYong(p: ShallowReactive<IProgress>) {
       position += chunk.length;
     }
     let result = new TextDecoder("utf-8").decode(chunksAll);
-    return result;
+    return JSON.parse(result) as Db;
   }
   throw Error("无法下载码表文件");
-}
-
-export function handleEachline(src: string, handler: (line: string) => void) {
-  const search = /\r?\n|\r/g;
-  let match = search.exec(src);
-  let last = 0;
-  while (match) {
-    handler(src.slice(last, match.index).trimEnd());
-    last = match.index + match[0].length;
-    match = search.exec(src);
-  }
-  handler(src.slice(last));
-}
-
-function parseEachLine(line: string, db: Db): void {
-  if (line.length === 0) return;
-  const [code, ...words] = line.split(" ");
-  words.forEach((w, i) => {
-    w = w.replace("$_", " ").replace("$$", "$"); // 小小的转义
-    const codesInDb = db.get(w);
-    const item = { code, duplicated: i + 1 };
-    if (codesInDb) codesInDb.push(item);
-    else db.set(w, [item]);
-  });
 }

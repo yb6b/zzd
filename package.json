@@ -5,9 +5,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
-    "preview": "vitepress preview docs"
+    "dev": "vitepress dev docs --base /zzd/",
+    "build": "vitepress build docs --base /zzd/",
+    "preview": "vitepress preview docs",
+    "wb": "vitepress build docs --base /"
   },
   "keywords": [],
   "author": "yb6b <seetxx@qq.com>",

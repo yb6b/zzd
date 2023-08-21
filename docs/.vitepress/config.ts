@@ -4,7 +4,6 @@ import { searchOptions } from "./searchOptions";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "/zzd/",
   lang: "zh-cn",
   title: "哲豆音形",
   outDir: "../dist",
@@ -15,7 +14,7 @@ export default defineConfig({
       {
         rel: "icon",
         type: "image/svg+xml",
-        href: "/zzd/zzd-logo.svg",
+        href: `zzd-logo.svg`,
       },
     ],
   ],

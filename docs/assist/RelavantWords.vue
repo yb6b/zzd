@@ -8,7 +8,7 @@ const relavantWords = computed(() => {
   if (!p.mb) return [];
   showMore.value = false;
   let result: string[][] = [];
-  for (const [words, v] of p.mb) {
+  for (const words in p.mb) {
     const index = words.indexOf(p.prompts);
     if (index !== -1 && words !== p.prompts) {
       if (!result[index]?.push(words)) {

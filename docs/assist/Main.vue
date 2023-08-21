@@ -16,7 +16,7 @@ const prompts = refDebounced(promptsR, 200);
 <template>
   <input v-model="promptsR" placeholder="输入要查询的字词" />
 
-  <ShowTable v-if="mb.has(prompts)" :mb="mb" :prompts="prompts" />
+  <ShowTable v-if="prompts in mb" :mb="mb" :prompts="prompts" />
 
   <RelavantWords
     v-if="prompts.length"
@@ -25,7 +25,7 @@ const prompts = refDebounced(promptsR, 200);
     @new-prompt="(j) => (promptsR = j)"
   />
 
-  <template v-if="mb.has(prompts)">
+  <template v-if="prompts in mb">
     <h2>汉典</h2>
     <iframe
       :src="`https://www.zdic.net/hans/${encodeURI(prompts)}`"
