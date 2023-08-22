@@ -21,8 +21,7 @@ interface IProgress {
 async function fetchJson(p: ShallowReactive<IProgress>) {
   const f = await fetch(G_mbUrl);
   if (f.ok) {
-    const contentLength = Number(f.headers.get("Content-Length"));
-    p.max = contentLength;
+    p.max = 3104067;
     let received = 0;
     p.current = received;
     let chunks: Uint8Array[] = [];

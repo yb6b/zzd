@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vitepress dev docs --base /zzd/",
     "build": "vitepress build docs --base /zzd/",
-    "preview": "vitepress preview docs",
+    "preview": "vitepress preview docs --base /",
     "wb": "vitepress build docs --base /"
   },
   "keywords": [],
