@@ -1,4 +1,4 @@
-import { defineConfig } from "vitepress";
+import { defineConfig,withBase } from "vitepress";
 import { sidebarOptions } from "./sidebarOptions";
 import { searchOptions } from "./searchOptions";
 
@@ -14,7 +14,7 @@ export default defineConfig({
       {
         rel: "icon",
         type: "image/svg+xml",
-        href: `zzd-logo.svg`,
+        href: '/zzd/zzd-logo.svg',
       },
     ],
   ],
