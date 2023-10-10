@@ -2,7 +2,7 @@ import type { ShallowReactive } from "vue";
 import { withBase } from "vitepress";
 
 let G_mbCache: Db;
-const G_mbUrl = withBase("assist.json");
+const G_mbUrl = withBase("/assist.json");
 
 export type Db = Record<string, string>;
 export async function fetchMb(p: ShallowReactive<IProgress>) {
@@ -21,7 +21,7 @@ interface IProgress {
 async function fetchJson(p: ShallowReactive<IProgress>) {
   const f = await fetch(G_mbUrl);
   if (f.ok) {
-    p.max = 3104067;
+    p.max = 3104503;
     let received = 0;
     p.current = received;
     let chunks: Uint8Array[] = [];

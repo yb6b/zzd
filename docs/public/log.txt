@@ -1,3 +1,41 @@
+2023年10月09日更新
+✦加入冰凌平台的一些命令直通车
+eru	$n年$02y月$02r日
+erq	$n年$02y月$02r日
+esj	$02s时$02f分$02m秒
+exu	星期$W
+exq	星期$W
+ejsq	$C打开计算器^calc.exe
+ejsu	$C打开计算器^calc.exe
+esbg	$C打开设备管理器^devmgmt.msc
+ejsb	$C打开记事本^notepad.exe
+eht	$C打开画图^mspaint.exe
+ezcb	$C打开注册表编辑器^regedit.exe
+eicb	$C打开注册表编辑器^regedit.exe
+erwg	$C打开任务管理器^taskmgr.exe
+exzb	$C打开写字板^wordpad.exe
+exib	$C打开写字板^wordpad.exe
+ejsj	$C打开计算机管理^compmgmt.msc^s
+extx	$C打开系统信息^msinfo32.exe
+ewdd	$C打开我的电脑^Explorer.exe
+ebl	$C冰凌输入法官网^www.icesofts.com
+ezdp	$C哲豆音形网盘^http://zzdzzd.ysepan.com
+ezdw	$C哲豆音形^https://yb6b.github.io/zzd
+eidp	$C哲豆音形网盘^http://zzdzzd.ysepan.com
+eidw	$C哲豆音形^https://yb6b.github.io/zzd
+ebds	$C百度^https://www.baidu.com/
+ebdd	$C百度地图^https://map.baidu.com/
+ebdd	$C百度图片^http://image.baidu.com/
+✦更改和加入一些词
+找补
+分布不均
+射→二②
+鸡头
+快充
+迭代
+辽阳→①
+地平面
+
 2023年08月28日更新
 脱困板
 达摩克利斯之剑

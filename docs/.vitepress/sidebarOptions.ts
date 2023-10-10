@@ -43,6 +43,7 @@ export const sidebarOptions: DefaultTheme.Sidebar = {
           items: [
             { text: "多多平台", link: "/guide/commands/duoduo" },
             { text: "小小平台", link: "/guide/commands/yong" },
+            { text: "冰凌输入法", link: "/guide/commands/bingling" },
           ],
         },
         { text: "感谢", link: "/guide/contributors" },
