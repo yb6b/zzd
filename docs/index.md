@@ -17,6 +17,9 @@ hero:
     - theme: alt
       text: 反查
       link: /assist/
+    - theme: alt
+      text: 下载
+      link: http://zzdzzd.ysepan.com/
 
 
 features:
