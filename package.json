@@ -5,8 +5,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vitepress dev docs --base /zzd/",
-    "build": "vitepress build docs --base /zzd/",
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "build2": "vitepress build docs --base /zzd/",
     "preview": "vitepress preview docs --base /",
     "wb": "vitepress build docs --base /"
   },

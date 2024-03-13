@@ -267,7 +267,7 @@ import Keyboard from "./Keyboard.vue"
 
 
 ## `vt` 部分特殊符号{#vt}
-实习、空心紧靠着。
+实心、空心紧靠着。
 
 <Keyboard prefix="vt" :data="{
     a:['◄'],

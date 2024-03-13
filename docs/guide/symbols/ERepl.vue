@@ -1,10 +1,21 @@
 <script setup lang="ts">
-import { ref, provide } from "vue";
+import { ref, provide, watch } from "vue";
 import type { Ref } from "vue";
 import FormatTable from "./FormatTable.vue";
 import FormatKbd from "./FormatKbd.vue";
 import Data from "./ESymbols.json";
-const codes = ref("e");
+import { useUrlSearchParams ,useTitle} from "@vueuse/core";
+
+const title = useTitle(undefined,{titleTemplate: '%s | e 键下的符号 | 哲豆音形'})
+
+const urlParams = useUrlSearchParams()
+const codes = ref(urlParams.q as string || 'e');
+
+watch(codes, (newCodes) => {
+  urlParams.q = newCodes
+  title.value = newCodes
+})
+
 provide("code", codes);
 const kbdStyle: Ref<"a" | "l" | "r"> = ref("a");
 </script>
@@ -15,22 +26,16 @@ const kbdStyle: Ref<"a" | "l" | "r"> = ref("a");
     <code>{{ codes }}</code>
     {{ Data[codes]?.title }}
   </h2>
-  <button
-    :disabled="codes.length < 2"
-    @click="
-      () => {
-        codes = codes.slice(0, -1);
-      }
-    "
-  >
+  <button :disabled="codes.length < 2" @click="() => {
+    codes = codes.slice(0, -1);
+  }
+    ">
     ⬅ 返回上一级
   </button>
   <div v-html="Data[codes]?.description"></div>
   <template v-if="Data[codes]">
-    <FormatKbd
-      v-if="Data[codes].description.includes('键盘')"
-      :kbdstyle="Data[codes].description.includes('左手键盘') ? 'l' : kbdStyle"
-    />
+    <FormatKbd v-if="Data[codes].description.includes('键盘')"
+      :kbdstyle="Data[codes].description.includes('左手键盘') ? 'l' : kbdStyle" />
     <FormatTable v-else />
   </template>
 </template>
