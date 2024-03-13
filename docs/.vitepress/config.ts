@@ -14,7 +14,7 @@ export default defineConfig({
       {
         rel: "icon",
         type: "image/svg+xml",
-        href: '/zzd/zzd-logo.svg',
+        href: '/zzd-logo.svg',
       },
     ],
   ],
