@@ -15,11 +15,11 @@
   "author": "yb6b <seetxx@qq.com>",
   "license": "Apache-2",
   "devDependencies": {
-    "@vueuse/core": "^10.7.2",
-    "vitepress": "1.0.0-rc.39",
-    "vue": "^3.4.15"
+    "@vueuse/core": "^12.2.0",
+    "vitepress": "1.5.0",
+    "vue": "^3.5.13"
   },
   "dependencies": {
-    "@types/node": "^20.11.5"
+    "@types/node": "^22.10.2"
   }
 }
