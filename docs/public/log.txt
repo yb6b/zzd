@@ -1,3 +1,975 @@
+2024年12月05日更新
+咱家→四①
+硬控①
+阿拉伯海
+坦→三①
+牙套②
+假牙→四①
+宽绰→四①
+
+2024年12月02日更新
+纸杯①
+咱校
+膈应②
+马来群岛
+曼德海峡②
+阿斯旺
+鲁尔↔乐儿
+鲁尔区①
+西西伯利亚②
+东西伯利亚③
+
+2024年11月18日更新
+燧石→四②
+白云岩，四②
+白云石，四③
+岩脉，四①
+佡→xjjo四①三②，ojjo四②
+仉→ojww四①
+玢→二②
+玢岩，四②三①
+芭乐→四②
+蘸料
+好饭不怕晚
+柯基
+房卡
+退卡
+消卡
+可丁可卯
+
+2024年10月17日更新
+焯水cmsd
+香叶xtyi
+投喂tkwi
+猫粮mwlm②
+重阳节ctyj①
+博主bfih①，bfzh①
+爱谁谁amss①
+爱啥啥amss
+爱啥啥吧assb
+
+2024年10月09日更新
+黄岗梁hfgl
+你瞧瞧njqq①，njuu②
+你瞅瞅njcc
+你看看njkk②
+板岩bcyo①
+石英砂岩sysy②
+飞蟹fnxw①
+短视频dtsp
+收阅svyj①
+执法办ikfb，zkfb
+含税hjst③
+已办ybbn①,ybbz
+办结bnjx①
+不计后果bjhg②
+不计免赔
+
+2024年09月30日更新
+翼子板ylib②，ylzb②
+前翼子板uyib，qyib，uyzb，qyzb
+后翼子板hyib①，hyzb①
+镇→三①，针→四①二②
+卓，去掉iyff，zyff的容错。统一为标准编码iyrf或zyrf，因为“卓”是上匕下早，上为鸟下为网，以网捕鸟之意，当为标准拆分方法。相关字皆统一标准。
+另“桌”字的标准为“上面＋木”，原因是这个桌字本字为“棹”，简化省略而成，上面的部分为“卓”的省略写法，下面的“木”表示意。
+涉及到的单字为：
+卓	iyff
+卓	zyff
+卓	oyf
+卓	oyff
+焯	cmyf
+棹	icyf
+淖	idyf
+䓬	ieyf
+罩	ioyf
+晫	iryf
+棹	ocyf
+淖	odyf
+䓬	oeyf
+繛	ogyf
+倬	ojyf
+掉	okyf
+焯	omyf
+罩	ooyf
+晫	oryf
+婥	osyf
+趠	ouyf
+绰	oxyf
+綽	oxyf
+棹	zcyf
+淖	zdyf
+䓬	zeyf
+罩	zoyf
+晫	zryf
+走圈iuuo，zuuo，iuqo，zuqo
+哈林海hilh①
+页岩→四③
+刃脊rnjh，rzjh①
+角峰jwfo①
+冰斗bhdn①
+风化侵蚀fhqs，fhus
+咋还iiha，ziha
+捕鸟bknw
+奈曼namr
+克什克腾kskt
+翁牛特wmnt
+北岸→①
+丁香湖dfxh①
+乌兰布统wlbt②
+乌兰布统草原wlby
+搭子dkiv①，dkzv①
+塌房tufl①
+真狠ifhw，zfhw
+石林→②
+未读wgdl①，武大郎→②
+已读ybdl①
+并表bmbg
+宣贯xngx①
+压实yasn②
+妥否tmfa
+一利五率ylwl③
+负债率fwil②，fwzl②
+漫才mdcf
+官宣gnxn②
+传呼机cjhj④
+
+2024年09月15日更新
+纯音乐
+剩饭→四①
+私房菜
+疙瘩汤
+
+2024年09月11日更新
+订→二②
+主峰→①
+钤印
+钤章
+瓶起子
+底层逻辑
+抚养比
+好大儿
+亲儿子
+亲闺女
+格桑花
+拼了命①
+头可断，血可流
+烟火气
+
+2024年08月27日更新
+峰林
+圆溜
+喀斯特→①
+葡萄皮
+葡萄籽
+黄瓜籽
+西瓜籽
+西瓜皮
+籽→二②
+卡司
+阿奇
+阿奇霉素
+
+2024年08月20日更新
+酸汤子sfti，sftz
+战损iysk②，zysk②
+
+2024年08月15日更新2
+❐章、意、竟等字的错误
+✦章，拆分为“音＋十”，ihrf✘zhrf✘，＋ihff①zhff①
+✦相关更正编码hr→hf
+樟	ichr|zchr①，梓→三①
+漳	idhr|zdhr
+璋	ighr|zghr
+瘴	ihhr|zhhr
+嶂	iohr|zohr
+幛	iohr|zohr
+蟑	iohr|zohr
+暲	irhr|zrhr
+嫜	ishr|zshr②
+障	ivhr|zvhr
+獐	iwhr|zwhr
+✦另更正错误编码
+镜	jyhr→jyhw
+噫	yihr✘
+镱	yyhr✘
+✦o键形码下更正的错误编码
+樈	ochr✘
+樟	ochr✘
+滰	odhr→odhw
+漳	odhr✘
+蔁	oehr✘
+薏	oehr
+騿	ofhr✘
+璄	oghr✘
+璋	oghr✘
+竸	ohhr✘
+麞	ohhr✘
+噫	oihr✘
+傹	ojhr✘
+傽	ojhr→ojhf
+糡	omhr→omhf
+慞	onhr→onhf
+蟑	oohr→oohf
+嶂	oohr✘
+幛	oohr✘
+瞕	oohr→oohf
+暲	orhr✘
+嫜	oshr→oshf
+境	ouhr✘
+墇	ouhr✘
+臆	ovhr✘
+障	ovhr✘
+獍	owhr✘
+鱆	owhr✘
+獐	owhr✘
+鏡	oyhr✘
+鏱	oyhr✘
+镱	oyhr✘
+镜	oyhr✘
+
+2024年08月15日更新
+较jshy✘→jshm，jshk
+背调byd①，bydl⑤
+黏合，四⑤三①
+黏合度①
+粘合度
+避坑①
+马甲线，四③三①
+鲨鱼线③
+人鱼线②
+
+2024年08月14日更新
+舒张sjiy①，sjzy①
+收缩压svsy
+帖→二②
+倒数→四①
+
+2024年08月13日更新
+配享太庙
+
+2024年08月12日更新
+冰果
+镇场子
+✦再次确定一下驘 羸 贏 蠃 臝 赢 鸁 嬴等字的编码
+①（亡口月凡）＋贝……，这些字为形声字，中下的“贝、羊……”为形，（亡口月凡）为yíng声，（亡口月凡）的金文写法是合在一起的“苍蝇”的意思。此编码应为标准正确编码。
+②亡＋口＋月，这是从直观的角度拆分，并不科学
+③加入新的容错码：（亡口）＋月＋贝……，容错原因为这几字上部和中部都是一样的，从下部开始的“月”算不同。这样的重码较少，便于输入。
+ohvf 痾 驘
+ohvm 羸 癮 讔
+ohvo 蠃 臝 贏 赢
+ohvr 鸁
+ohvs 嬴 鹿
+lhvm 羸
+lhvo 蠃
+yhvo 赢
+yhvs 嬴
+
+2024年08月10日更新2
+混合代谢运动	hhdd③
+体脂率	tjil，tjzl①
+泵感	baga②
+肌肉泵感	jrbg
+减重	jhit②，jhzt②
+平台期	phtu②，phtq
+跑力	piln，pilz
+跑路→三①
+跑力值	pili③，pilz②
+跑力指数	plzs，plis
+自由训练	iyxl②，zyxl②
+户外步行	hwbx
+户外跑步	hwpb
+步频	bypy
+平均步频	pjbp
+平均配速	pjps
+最大摄氧量	idsl③，zdsl③
+摄氧量	skyl②
+配速→四①，飘散→三①
+有氧耐力	yynl
+无氧耐力	wynl①
+无氧	wgyt
+有氧	yayt②
+无氧运动	wyyd②
+
+2024年08月10日更新
+边控bnkk①，bzkk①
+酱香jhxt②
+汆丸子cmwi，cmwz
+光猫gjmw
+ydyd 游泳 一点一滴 洋溢 渊源 沂源 泱泱 油源
+啪啪啪pipp
+抓手iksk③，zksk③（圆满）
+严控yfkk①
+垫资dkih③，dkzh③（圆满）
+摔门skmj①
+完成率wncl
+秋裤qtkl②，utkl②
+秋衣qtyh④，utyh④，氢氧化①情投意合②秋意③
+
+2024年08月08日更新
+椅子→①，椰子→②，柚子→③，样子→④
+极夜（圆满版）
+
+2024年08月07日更新
+那么好办nmhn→nmhb
+小米辣xpml
+泡腾片pdtp
+
+2024年08月06日更新
+莱州湾leiw①，lezw
+东莱dsle①
+煎肉jmro①
+牛肉板面nrbm
+啥玩意儿swye↔色艺
+羊肉板面yrbm②
+不必说了bbsl
+超快cukn①，超宽→三①
+骗得了pxdl
+骗不了pxbl
+会让hjrl
+不会bahj
+热死了rksl
+也没必要ymby
+都不要dfby
+挺难得tknd
+不认可bark
+也多yvdw①，胰岛→三①
+都过去dfgq，dfgu
+都过去了dgql，dgul
+那档子事ndis，ndzs
+那么好↔那麽
+那么久nbmj①
+那么快nbmk
+那么慢nbmm
+那么蓝nbml
+那么冷nbml
+那么凉nbml
+那么亮nbml
+管不了gtbl
+别有用处byyc
+别有biya
+还有→四①
+那我nbwt
+来了吧lhlb
+死了吧salb
+走了吧iulb，zulb
+去了吧qulb，uulb
+了吧lvbi①
+只增不减iibj②，zzbj②
+让他rltj
+让她rlts
+让它rltn
+没什么用msmy
+没啥用mdsy
+那么好办nmhn
+那好办nbhb
+那完了nbwl
+那好吧nbhb①
+那行吧nbxb
+迟早的事czds，cids②
+开空调kgkt
+弄了nglv
+叛逆期pmnq，pmnu
+抵押金dkyj④
+不便babj
+掼蛋gkdv
+仚屳屲冚xxwk
+曾母暗沙zmas，imas
+爆雷bmlh四②三②
+暴雷brlh四②三①
+五菱wfle①
+五菱宏光wlhg
+
+2024年08月01日更新
+朴拙→①
+磨墨②
+研墨
+带节奏①
+没救了②
+幸存者偏差
+很不爽
+干不了
+网暴
+共享单车①
+二十四孝
+扯住③
+小妖精
+草台班子③
+毛坯房
+美债②
+下班回来↔笑不活了
+
+2024年07月29日更新
+裤兜子kldi，kldz
+拉裤兜子lkdi②，lkdz②
+拉裤兜lkkd
+高光ghgj①
+高光时刻ggsk
+鬼畜grch①
+调取dluf④，三①
+翅片cfpr
+翅片管cfpg
+独山子dwsi②，dwsz②
+讯飞xlfn，xlfz①
+压舱石yacs②
+性侵xnun，xnqn
+外购wwgo②,wwg①
+央妈yoms
+踔厉cila
+踔厉奋发clff
+笃行不怠dxbd③
+踔厉奋发，笃行不怠clfd②
+笑死我了xswl
+白月光	bryg→②
+好快	hsk
+没脑子	mdn，mdni②，mdnz②
+抓人	zkrj⑤，ikrj⑤
+水群	sdqb，sdub
+仆街	pjjk②，pjgk
+虚了	xylv
+劳斯莱斯→②，连连→三①
+我也不懂	wybd
+麻了	mhlv①
+赢麻了	yhml①
+输麻了	ssml①
+赚麻了ioml①，zoml①
+也不懂	yvbd
+也不敢	yvbg①
+也不跟	yvbg③
+也不想	yvbx②
+山里→①
+有什么用↔有什么样
+有什么样的ysmd
+卧槽	wfcc
+降智	jvzt②，jvit②
+党徽djhk①
+党刊djkg②，低开→①
+党日djrr②
+多小dwxp
+本次bfch①
+定损dnsk②
+报险bkxv
+保险员bjxy②
+理赔员lgpy
+掏心窝子txwi①，txwz①
+棺材板儿gcbe
+棺材板gccb②
+美团mmto③，mmt①
+小程序xpcx
+转化率ishl①，zshl①
+大众点评didp，dzdp
+乘车码ctcm
+杀猪盘smip，smzp
+仙人跳xjrt①
+强执qbik，ubik，qbzk，ubzk①
+胯下击掌kxji，kxjz
+大鹏展翅dpic，dpzc
+危废wwfh②
+固废gofh①
+挺没趣tkmq，tkmu
+挺没劲tkmj②
+挺有意思tyys
+挺不住tkbi①，tkbz①
+挺不住了tbil②,tbzl②
+淤血→②
+体脂秤tjic，tjzc
+
+本次暂未加入：
+说什么吧	ssmb
+生死战	stsz③，stsi④
+
+2024年07月24日更新
+✦本次加入词：
+蝶阀dofj
+球阀qgfj，ugfj→①
+止回阀iyhf，zyhf
+圈粉qofm，uofm→①，蜞→②
+零和lhht→①
+零和博弈lhby→①
+零和游戏lhyx→③
+非零和博弈flhy
+招标→四②
+评标plbc
+得不到dkbd→①
+对的dldr
+别说bisl→三②四②
+固化gohj→④
+担起dkuu→⑤，dkqu→④
+黑粉hofm
+烤冷面kmlm→三①四②
+幽门螺旋杆菌ymlj→③
+列巴labv
+大列巴dalb
+火参果hmsg
+动刀动枪dddq，dddu
+狐獴hwmw
+羊角蜜ymjm
+西柚xfyc→②
+丑柑cvgc→③
+丑橘cvjc
+菇茑gene
+姑娘儿gsne
+姑娘果gsng
+莲雾lewh→①
+蜜桔mnjc→②
+提子tkiv，tkzv→①
+油桃ydtc→②
+蔓越莓meym
+香梨xtlt→①
+南果梨nfgl
+黑布林hobl→③
+蛇果sogo→⑤
+啤梨pilt→②
+茄梨qelt，uelt
+海棠果hdtg↔海天
+蛇皮果sopg
+红毛丹hxmd→②
+蛋黄果dvhg
+青枣qgif，qgzf，ugif，ugzf
+
+✦本次暂未加入词：
+鲜竹沥
+小黑子
+红提
+青提
+
+
+2024年07月19日更新
+分包fmbw
+分包商fmbs
+合规hjgg→①
+手擀面skgm
+原件yajj→⑤圆满
+询价xljj→②
+经纬仪jxwy→①
+水平仪sdpy
+新签合同xqht，xuht
+压力容器ylrq，ylru
+大盘鸡dapj
+番茄酱fmqj，fmuj
+羊肠子yvcz，yvci
+领悟力ljwl
+执行力zkxl，ikxl→③
+选项卡xtxk→③
+加载项jnzx，jnix，jzzx，jzix
+钵钵鸡bybj→①
+挖掘机wkjj
+乐高lwgh
+煨弯↔为文
+爆款↔八块
+背债人byzr，byir
+信创xjcj
+杀猪刀smzd，smid
+战新zyxh，iyxh
+战新产业zxcy，ixcy→②
+战新业务↔中学语文
+密封件mnfj
+娃娃菜wswc
+智驾ztjn，itjn，ztjz，itjz
+智库ztkh，itkh→四②，三②
+大数据dasj→②
+赋能fonl
+新动能xhdn
+步道bydm
+精益jmym→①
+精益运营jyyy
+精益管理jygl→③
+精益生产jysc→①
+精细化jmxh
+裸车llcs
+网约车woyc
+赓续ghxx
+中国梦zogm，iogm
+江浙沪jdzh，jdih
+京津冀jhjj→②
+成渝cayd
+躺地trdu
+登山扣dlsk→②
+指虎zkhy，ikhy
+
+★本次暂未加入：
+固废gofh→②
+猪下水zwxs，iwxs
+盘管pqgt
+兆芯
+海思
+挤出机jkcj
+特朗普
+当期
+撬块
+封头
+吊耳
+
+2024年07月13日更新
+续租→①
+鸿蒙→①
+
+2024年07月11日更新
+删除yelj 蓣
+加入“么”的yāo音
+驴肉火烧
+直播带货
+带货
+晶核
+
+2024年07月03日更新
+健腹轮→四①
+伎→三②
+开合跳
+
+2024年07月02日更新
+护坡堤
+聚一聚
+鹰嘴豆
+双卡双待
+双打→三①
+手脖子
+脚脖子
+
+2024年06月21日更新
+燃脂
+手拿把掐
+𰻝
+𰻝𰻞面
+
+2024年06月17日更新
+酷炫
+热季
+气泡→三①
+减脂②
+增肌
+
+2024年05月28日更新
+损友→①
+焦糖
+加密→三①
+参clq✘
+
+2024年05月27日更新
+嗞oimx→四①
+滋滋（圆满版）
+九宫格
+㼆，𬎆
+
+2024年05月21日更新
+赢→二②，瘾→二③，虽然“瘾”要打四下最后两下要同手连击，但这个字单用的时候较少，而“赢”在单用较多，故改之。
+
+2024年05月19日更新
+詝，加ihnf、zhnf
+牛肉干
+原装→四①
+滋→二②
+息屏
+自提
+奥莱
+健腹轮＋三②
+茶蛋
+
+2024年05月08日更新
+吊脚楼
+刺嫩芽
+婆婆丁→四③
+荠荠菜
+苦苣
+苦荬菜
+苦荬
+
+2024年05月06日更新
+洛伦兹
+噓oiyu✘→oiyv
+虛oyud✘→oyvd
+墟ouyy✘→ouyu
+
+2024年05月02日更新
+㨃，okhi和okhv→①，加dkhi和dkhv（除酷极外）
+
+2024年05月01日更新
+中文→四①，瞻→三②、四②
+面碱
+桃园三结义
+木糖醇
+黽oocc→oodd
+漫展
+乒乓球拍
+
+2024年04月18日更新
+去掉冰凌文件ekg下的全角空格，以便能够顺利导入。
+扶手箱
+低温→四①
+胜地→四①
+巴沙鱼
+岬角
+
+2024年04月14日更新
+加入三千多县名词
+加入三百多有全无简字
+加入六十多无全码字
+加入六百多高中语文词
+炒饭→①
+驾驶证jnsz→①
+奇台jatl✘
+磅bahh，首smao，契xgak加快版全码
+蠃✘ohoj，lhoj
+鞋子→四②（圆满版）
+
+2024年04月10日更新
+系	jep✘
+夸	kad✘
+属	ibt✘
+属	zbt✘
+铥	dyt✘
+陌	mva✘
+
+2024年04月09日更新
+峨冠	eogl
+浮藻	fdie
+浮藻	fdze
+芳馨	fexu
+丰韵	fgyh
+分毫无爽	fhws
+祓除	flcv
+房檩	fllc
+风流态度	fltd
+负屈衔冤	fqxy
+
+2024年04月07日更新
+∶＋esld，esb→①，vsb▐✘→∶✔
+
+2024年04月06日更新
+端绪	dhxx
+底细→三①
+搭膊	dkbv
+德泽	dkid
+德泽	dkzd
+待诏	dkil
+待诏	dkzl
+抖搂	dklk
+砥砺品格	dlpg
+东挪西借	dnxj
+典型化	doxh
+遁辞	dqct
+丹墀	dwcu
+钝响	dyxi
+
+2024年04月05日更新
+尝→二②
+第→二②
+荠菜→四②
+哈尔滨红肠
+红肠
+港式→三①
+港式腊肠
+不聊了
+嫪毐	lsau
+网剧	wojb
+网飞	wofn
+爱奇艺	amqy
+爱奇艺	amuy
+拼多多	pkdd
+抖音	dkyh
+小红书	xphs
+马斯克	mxsk
+比亚迪	bsyd
+尝尝→三②
+
+2024年04月04日更新
+内酯	noif
+内酯	nozf
+内酯豆腐	nidf
+内酯豆腐	nzdf
+石膏豆腐	sgdf
+卤水豆腐	lsdf
+打拱作揖	dgiy
+打拱作揖	dgzy
+
+2024年04月03日更新
+榴梿	lclc
+梿	lcsn
+旸	yrze
+刍牧	cwmt
+馋吻	cwwi
+钗钏	cycy
+钗环	cyhg
+错勘	cykf
+陈言务去	cywq
+陈言务去	cywu
+绰有余裕	cyyy
+
+2024年04月02日更新
+惩创	ckcj
+攒射	cksr
+戳子	cliv
+戳子	clzv
+初隽	cljj
+尘满面，鬓如霜	cmms
+蝉蜕	coto
+尘芥	cpje
+尘网	cpwo
+才情横溢	cqhy
+才情横溢	cuhy
+川资	crih
+川资	crzh
+猝然离世	crls
+存身立命	cslm
+城隅	cuyv
+怅望低徊	cwdh
+
+2024年04月01日更新
+苦碟子	kedi
+苦碟子	kedz
+曲麻菜	uomc
+曲麻菜	qomc
+苦麻菜	kemc
+折耳根	ikeg
+折耳根	zkeg
+泥胡菜	ndhc
+
+2024年03月31日更新
+草窠	cekn
+接连→四①
+日料
+蔡襄	cexh
+苍幽	ceyx
+才富八斗	cfbd
+敕造	cfit
+茶坊酒肆	cfjs
+朝礼	cfll
+敕造	cfzt
+崇高境界	cgjj
+春帷	cgwo
+苌弘化碧	chhb
+宸翰之宝	chib
+宸翰之宝	chzb
+蹉跌	cidi
+啜茗	cime
+彩舟云淡	ciyd
+彩舟云淡	czyd
+持之有理	ciyl
+持之有理	czyl
+丛冢	cjil
+丛冢	cjzl
+促狭鬼	cjxg
+
+2024年03月30日更新
+饱绽	bwix
+饱绽	bwzx
+不系之舟	bxii
+不系之舟	bxzz
+不足齿数	bzcs
+蹙缩	casx
+尺牍	cbdr
+孱头	cbtn
+澄澈秋水	ccqs
+澄澈秋水	ccus
+潺潺山溪	ccsx
+沉烦	cdfm
+沉滞	cdid
+沉滞	cdzd
+翠钿金钏	cdjc
+沉勇	cdyl
+
+2024年03月29日更新
+金雕
+渡鸦
+雪鸮
+白头鹰
+巨嘴鸟
+鵎鵼tmkn
+珠鸡
+碳化钨
+﻿倭刀
+﻿鬼压床
+
+2024年03月28日更新
+@挥泪审判者更新rime配置
+拗开	akkg
+暧暧	arar
+黯然泣下	arqx
+黯然泣下	arux
+谙于世故	aysg
+不惮	badn
+不图	bato
+不恤	baxn
+卑鄙无赖	bbwl
+板滞	bcid
+板滞	bczd
+薜荔	bele
+奔放不羁	bfbj
+鬓发如银	bfry
+白骨累累	bgll
+碧纱橱	bgsc
+不足齿数	bics
+不可遏制	bkei
+不可遏制	bkez
+不克自拔	bkib
+不克自拔	bkzb
+不可抹煞	bkms
+饱历沧桑	blcs
+波澜滚滚	blgg
+不落言筌	blyq
+不落言筌	blyu
+蹩进	bmjg
+不容抹杀	brms
+暴殄	brta
+笨坯	btpu
+
+2024年03月24日更新
+✘栉jce，jcev
+✘拗kkx，拗kkxn，拗kkxz
+＋昳drtk yrt
+避之若浼birm
+避之若浼bzrm
+辽东栎lvdl
+拧开
+涎脸涎皮	xlxp
+涎皮赖脸	xpll
+䫸ownn
+𩖙ownn
+𩙮owhi
+䬘owhi
+𩙧owgf
+𬱵owgi
+䬞owuc
+𩖧owmm
+𩘭owmv
+䬈owmi
+𩗉owmf
+𩗞owem
+𩗿owfk
+𩗧ovwr
+𩗏ofwr
+𩖘ofwr
+𩖱owdd
+𩖸owis
+䬆owtu
+
+2024年03月19日更新
+咖啡机
+挂耳
+手冲
+拼配
+摩卡
+意式
+猫屎
+猫屎咖啡
+玛奇朵
+康宝蓝
+行呀
+可以呀
+
+2024年03月17日更新
+秀→二②
+兖，加个容错码yhml
+鿫otra
+㞎obvc
+斗嘴
+查一查
+算一算
+量一量
+舔一舔
+㨃okhv，okhi
+㗎oinc
+鿔oyff
+
 2024年03月10日更新
 感谢“挥泪审判者”制作的rime平台新版安装文件，可以用在安卓13和14上，而且更加高级了
 大肉面

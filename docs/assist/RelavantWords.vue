@@ -51,23 +51,18 @@ const limitArray = (src: string[][]) => {
     <template v-if="relavantWordsLength > 100 && !showMore">
       <div class="flex" v-for="i of limitArray(relavantWords)">
         <a
-          v-for="j of i"
-          @click="
-            () => {
+           v-for="j of i"
+           @click="() => {
               $emit('newPrompt', j);
             }
-          "
-          >{{ j }}</a
-        >
+            ">{{ j }}</a>
       </div>
 
       <button
-        @click="
-          () => {
-            showMore = true;
-          }
-        "
-      >
+              @click="() => {
+                  showMore = true;
+                }
+                ">
         显示剩余
         {{ relavantWordsLength - 80 }}
         个词条…
@@ -76,14 +71,11 @@ const limitArray = (src: string[][]) => {
     <template v-else>
       <div class="flex" v-for="i of relavantWords">
         <a
-          v-for="j of i"
-          @click="
-            () => {
+           v-for="j of i"
+           @click="() => {
               $emit('newPrompt', j);
             }
-          "
-          >{{ j }}</a
-        >
+            ">{{ j }}</a>
       </div>
     </template>
   </template>
@@ -100,6 +92,7 @@ a {
   display: block;
   padding: 0 8px;
   word-break: keep-all;
+  text-decoration: none;
 }
 
 button {

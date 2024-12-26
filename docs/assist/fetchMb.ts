@@ -2,7 +2,7 @@ import type { ShallowReactive } from "vue";
 import { withBase } from "vitepress";
 
 let G_mbCache: Db;
-const G_mbUrl = withBase("/assist.json");
+const G_mbUrl = withBase("/assist.tsv");
 
 export type Db = Record<string, string>;
 export async function fetchMb(p: ShallowReactive<IProgress>) {
@@ -20,8 +20,8 @@ interface IProgress {
 
 async function fetchJson(p: ShallowReactive<IProgress>) {
   const f = await fetch(G_mbUrl);
-  if (f.ok) {
-    p.max = 3104503;
+  if (f.ok && f.body) {
+    p.max = 2503931;
     let received = 0;
     p.current = received;
     let chunks: Uint8Array[] = [];
@@ -40,7 +40,16 @@ async function fetchJson(p: ShallowReactive<IProgress>) {
       position += chunk.length;
     }
     let result = new TextDecoder("utf-8").decode(chunksAll);
-    return JSON.parse(result) as Db;
+    return Object.fromEntries(parseTsv(result)) as Db;
   }
   throw Error("无法下载码表文件");
+}
+
+
+function parseTsv(str: string) {
+  return str.trim().split("\n").map((line) => trimEnd(line).split("\t"));
+}
+
+function trimEnd(str: string) {
+  return str.replace(/^[\r\t ]+$/g, "");
 }
