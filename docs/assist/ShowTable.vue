@@ -36,22 +36,26 @@ const isPerOnly = computed(() => {
 <template>
   <div style="display: flex; justify-content: center">
     <table style="">
-      <tr>
-        <th>编码</th>
-        <th>选重</th>
-        <th>快版</th>
-      </tr>
-      <tr v-for="i of codeDatas">
-        <td>
-          <code>{{ i.code }}</code>
-        </td>
-        <td>
-          {{ i.dupl }}
-        </td>
-        <td>
-          {{ i.isPer ? "" : "是" }}
-        </td>
-      </tr>
+      <thead>
+        <tr>
+          <th>编码</th>
+          <th>选重</th>
+          <th>快版</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="i of codeDatas">
+          <td>
+            <code>{{ i.code }}</code>
+          </td>
+          <td>
+            {{ i.dupl }}
+          </td>
+          <td>
+            {{ i.isPer ? "" : "是" }}
+          </td>
+        </tr>
+      </tbody>
     </table>
   </div>
   <div style="text-align: center" v-show="isPerOnly">
