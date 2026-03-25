@@ -22,7 +22,7 @@ const isPerOnly = computed(() => {
         <tr>
           <th>编码</th>
           <th>选重</th>
-          <th>快版</th>
+          <th>圆满版独有</th>
         </tr>
       </thead>
       <tbody>

@@ -30,7 +30,7 @@ onMounted(() => {
     <div v-show="showProgress">
       正在加载哲豆码表……
       <br />
-      <progress class="progress" :max="downloadProgress.max" :value="downloadProgress.current" />
+      <progress class="progress progress-primary" :max="downloadProgress.max" :value="downloadProgress.current" />
     </div>
   </div>
   <Main v-else :mb="mb" />
