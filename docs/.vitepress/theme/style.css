@@ -2,7 +2,14 @@
  * Customize default theme styling by overriding CSS variables:
  * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
  */
-
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #b45309;
+  --color-secondary: #516cc7;
+}
 /**
  * Colors
  * -------------------------------------------------------------------------- */

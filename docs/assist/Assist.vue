@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted, shallowReactive } from "vue";
-import { fetchMb, InvertedMap,invertMabiao } from "./fetchMb";
+import { fetchMb, InvertedMap, invertMabiao } from "./fetchMb";
 import Main from "./Main.vue";
 
 const showProgress = ref(false);
@@ -19,7 +19,7 @@ onMounted(() => {
   }, 300);
 
   fetchMb(downloadProgress).then((v) => {
-    mb =invertMabiao(v);
+    mb = invertMabiao(v);
     done.value = true;
   });
 });
@@ -30,7 +30,7 @@ onMounted(() => {
     <div v-show="showProgress">
       正在加载哲豆码表……
       <br />
-      <progress :max="downloadProgress.max" :value="downloadProgress.current" />
+      <progress class="progress" :max="downloadProgress.max" :value="downloadProgress.current" />
     </div>
   </div>
   <Main v-else :mb="mb" />

@@ -1,6 +1,8 @@
 import { defineConfig,withBase } from "vitepress";
 import { sidebarOptions } from "./sidebarOptions";
 import { searchOptions } from "./searchOptions";
+import tailwindcss from '@tailwindcss/vite';
+
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -8,6 +10,9 @@ export default defineConfig({
   title: "哲豆音形",
   outDir: "../dist",
   description: "简单、顺手、成熟的两笔输入法。",
+  vite:{
+    plugins: [tailwindcss()],
+  },
   head: [
     [
       "link",
