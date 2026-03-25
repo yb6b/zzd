@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { ref, onMounted, shallowReactive } from "vue";
-import { fetchMb, Db } from "./fetchMb";
+import { fetchMb, InvertedMap,invertMabiao } from "./fetchMb";
 import Main from "./Main.vue";
 
 const showProgress = ref(false);
 const done = ref(false);
 
-let mb: Db;
+let mb: InvertedMap;
 
 const downloadProgress = shallowReactive({
   max: 0,
@@ -19,7 +19,7 @@ onMounted(() => {
   }, 300);
 
   fetchMb(downloadProgress).then((v) => {
-    mb = v;
+    mb =invertMabiao(v);
     done.value = true;
   });
 });

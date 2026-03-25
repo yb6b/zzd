@@ -1,36 +1,18 @@
 <script setup lang="ts">
 import { computed, onMounted } from "vue";
+import type { CodeInfo } from '../assist/fetchMb'
 const p = defineProps(["mb", "prompts"]);
 
-interface CodeDatas {
-  code: string;
-  dupl: string;
-  isPer: boolean;
-}
 
-const codeDatas = computed(() => {
-  const codesrc = p.mb[p.prompts] as string;
-  const pattern = /([a-z]+)(\d+)(\*?)/g;
-  const r: CodeDatas[] = [];
-  while (1) {
-    const match = pattern.exec(codesrc);
-    if (!match) break;
-    r.push({
-      code: match[1],
-      dupl: match[2],
-      isPer: !!match[3],
-    });
-  }
-  return r;
-});
+
+const codeDatas = computed(() => p.mb.get(p.prompts) as CodeInfo[]);
 
 const isPerOnly = computed(() => {
-  for (const i of codeDatas.value) {
-    if (!i.isPer) {
-      return false;
-    }
+  const arr: CodeInfo[] = p.mb.get(p.prompts)
+  if (arr.every((v) => !v.isMofast)) {
+    return true;
   }
-  return true;
+  return false;
 });
 </script>
 <template>
@@ -52,7 +34,7 @@ const isPerOnly = computed(() => {
             {{ i.dupl }}
           </td>
           <td>
-            {{ i.isPer ? "" : "是" }}
+            {{ i.isMofast ? "" : "是" }}
           </td>
         </tr>
       </tbody>
